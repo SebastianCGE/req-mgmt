@@ -1,9 +1,8 @@
-Template for the Read the Docs tutorial
-=======================================
+Template for Requirements Management using Needs
+=================================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This template is demonstrator for using Needs as a requirements management
+tool with some basic Sphinx docs. Furthermore this documentation can be published
+on https://readthedocs.io
 
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+The documentation built for this archive can be found here: https://req-mgmt.readthedocs.io
