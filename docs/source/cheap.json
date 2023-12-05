@@ -1,0 +1,65 @@
+{
+    "created": "2023-12-01T16:59:27.297922",
+    "current_version": "0.1.0",
+    "project": "reqmgmt",
+    "versions": {
+        "0.1.0": {
+            "created": "2023-12-01T16:59:27.297916",
+            "filters": {},
+            "filters_amount": 0,
+            "needs": {
+                "R_cheap": {
+                    "avatar": "",
+                    "closed_at": "",
+                    "completion": "",
+                    "created_at": "",
+                    "description": "",
+                    "docname": "external",
+                    "duration": "",
+                    "external_css": "external_link",
+                    "external_url": null,
+                    "full_title": "The product shall be cheap",
+                    "has_dead_links": "",
+                    "has_forbidden_dead_links": "",
+                    "hidden": "",
+                    "id": "R_cheap",
+                    "id_prefix": "",
+                    "is_external": false,
+                    "is_modified": false,
+                    "is_need": true,
+                    "is_part": false,
+                    "layout": "",
+                    "links": [],
+                    "max_amount": "",
+                    "max_content_lines": "",
+                    "modifications": 0,
+                    "parent_need": null,
+                    "parent_needs": [],
+                    "parent_needs_back": [],
+                    "parts": {},
+                    "post_template": null,
+                    "pre_template": null,
+                    "query": "",
+                    "section_name": "External Requirements",
+                    "sections": [],
+                    "service": "",
+                    "signature": "",
+                    "specific": "",
+                    "status": "open",
+                    "style": null,
+                    "tags": [
+                        "system"
+                    ],
+                    "template": null,
+                    "title": "The product shall be cheap",
+                    "type": "req",
+                    "type_name": "Requirement",
+                    "updated_at": "",
+                    "url": "",
+                    "user": ""
+                }
+            },
+            "needs_amount": 1
+        }
+    }
+}
