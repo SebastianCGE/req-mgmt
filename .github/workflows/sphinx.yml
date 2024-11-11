@@ -16,9 +16,10 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install -r docs/requirements.txt
 
-    - name: Install LaTeX packages
+    - name: Install Graphviz and LaTeX packages
       run: |
         sudo apt-get update -y
+        sudo apt-get install -y graphviz
         sudo apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 
     - name: Build LaTeX documentation
