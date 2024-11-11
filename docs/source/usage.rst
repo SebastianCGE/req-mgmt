@@ -18,19 +18,21 @@ Building locally
 
 Activate the environment for your platform first
 
-**UX:**
+.. tabs::
 
-.. code-block:: console
+   .. tab:: UX
 
-   cd docs
-   source activate.sh
+      .. code-block:: console
 
-**Windows:**
+         cd docs
+         source activate.sh
 
-.. code-block:: console
+   .. tab:: Windows
 
-   cd docs
-   activate.bat
+      .. code-block:: console
+
+         cd docs
+         activate.bat
 
 Then build the documentation locally by entering ``make html``. 
 Documentation can be viewed by opening index.html.

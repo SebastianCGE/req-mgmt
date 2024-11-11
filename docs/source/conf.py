@@ -24,6 +24,7 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinx_needs',
     'sphinxcontrib.plantuml',
+    'sphinx_tabs.tabs',
 ]
 
 intersphinx_mapping = {
