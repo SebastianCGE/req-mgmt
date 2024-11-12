@@ -2,6 +2,14 @@ name: Build Documentation
 
 on:
   pull_request:
+    paths:
+      - 'docs/**' # Trigger on changes to the docs directory
+  workflow_dispatch: # Allow manual triggering of the workflow from the Actions tab
+
+permissions:
+  id-token: write
+  contents: read
+  pages: write
 
 jobs:
   docs:
@@ -21,13 +29,32 @@ jobs:
         sudo apt-get install -y graphviz
         sudo apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 
-    - name: Build LaTeX documentation
+    - name: Build Sphinx documentation
       run: |
         cd docs
         make latexpdf
+        make html
 
-    - name: Upload artifacts
+    - name: Delete existing artifacts
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh api -X DELETE /repos/${{ github.repository }}/actions/artifacts || echo "No artifacts to delete"
+
+    - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
       with:
         name: req-mgmt.pdf
         path: docs/build/latex/req-mgmt.pdf
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
+    - name: Upload HTML artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: docs/build/html
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
