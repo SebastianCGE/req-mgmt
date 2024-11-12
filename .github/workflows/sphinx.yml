@@ -40,7 +40,7 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh api -X DELETE /repos/${{ github.repository }}/actions/artifacts
+        gh api -X DELETE /repos/${{ github.repository }}/actions/artifacts || echo "No artifacts to delete"
 
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
@@ -50,10 +50,12 @@ jobs:
 
     - name: Setup Pages
       uses: actions/configure-pages@v5
+
     - name: Upload HTML artifact
       uses: actions/upload-pages-artifact@v3
       with:
         path: docs/build/html
+
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
