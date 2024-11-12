@@ -6,3 +6,5 @@ tool with some basic Sphinx docs. Furthermore this documentation can be publishe
 on https://readthedocs.io
 
 The documentation built for this archive can be found here: https://req-mgmt.readthedocs.io
+And also here in GitHub Pages: https://qluit.github.io/req-mgmt/
+Documentation is also built as PDF upon every pull request in the GitHub action.
