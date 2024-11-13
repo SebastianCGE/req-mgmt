@@ -63,7 +63,7 @@ html_style = 'css/mytheme.css'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-latex_engine = 'xelatex'
+# -- Options for LaTeX/PDF output
 latex_elements = {
     'passoptionstopackages': r'''
 \PassOptionsToPackage{svgnames}{xcolor}
