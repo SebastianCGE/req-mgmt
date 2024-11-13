@@ -85,7 +85,6 @@ latex_elements = {
     'printindex': r'\footnotesize\raggedright\printindex',
     'papersize': 'a4paper',
     'figure_align': 'H',
-    'atendofbody': r'Qluit',
     'releasename': 'Version',
 }
 latex_show_urls = 'footnote'
