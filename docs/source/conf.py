@@ -69,9 +69,9 @@ latex_elements = {
 \PassOptionsToPackage{svgnames}{xcolor}
 ''',
     'fontpkg': r'''
-\setmainfont{DejaVu Serif}
-\setsansfont{DejaVu Sans}
-\setmonofont{DejaVu Sans Mono}
+\usepackage{mathptmx} % Times New Roman
+\usepackage[scaled=.90]{helvet} % Helvetica
+\usepackage{courier} % Courier
 ''',
     'preamble': r'''
 \usepackage[titles]{tocloft}
