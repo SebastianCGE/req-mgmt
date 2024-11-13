@@ -83,5 +83,9 @@ latex_elements = {
     'sphinxsetup': 'TitleColor=DarkGoldenrod',
     'fncychap': r'\usepackage[Bjornstrup]{fncychap}',
     'printindex': r'\footnotesize\raggedright\printindex',
+    'papersize': 'a4paper',
+    'figure_align': 'H',
+    'atendofbody': r'''eob \backmatter''',
+    'releasename': 'Version',
 }
 latex_show_urls = 'footnote'
