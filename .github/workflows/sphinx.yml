@@ -1,7 +1,6 @@
 name: Build Documentation
 
 on:
-  push:
   pull_request:
     paths:
       - 'docs/**' # Trigger on changes to the docs directory
