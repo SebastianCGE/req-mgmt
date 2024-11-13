@@ -85,7 +85,7 @@ latex_elements = {
     'printindex': r'\footnotesize\raggedright\printindex',
     'papersize': 'a4paper',
     'figure_align': 'H',
-    'atendofbody': r'''eob \backmatter''',
+    # 'atendofbody': r'''qluit''',
     'releasename': 'Version',
 }
 latex_show_urls = 'footnote'
