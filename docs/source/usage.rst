@@ -18,19 +18,21 @@ Building locally
 
 Activate the environment for your platform first
 
-**UX:**
+.. tabs::
 
-.. code-block:: console
+   .. tab:: UX
 
-   cd docs
-   source activate.sh
+      .. code-block:: console
 
-**Windows:**
+         cd docs
+         source activate.sh
 
-.. code-block:: console
+   .. tab:: Windows
 
-   cd docs
-   activate.bat
+      .. code-block:: console
+
+         cd docs
+         activate.bat
 
 Then build the documentation locally by entering ``make html``. 
 Documentation can be viewed by opening index.html.
@@ -55,6 +57,20 @@ The json file can be imported in the specification project by a `needs_import` d
 The requirement R_cheap is imported from a local file called cheap.json. 
 Once the Requirements are built on RTD, they can even be imported in the Specification 
 document by using the url on RTD for `needs_import`.
+
+Dirty links
+------------
+
+When updating requirements (any need actually), the links to other needs might become dirty.
+To be able to detect dirty links, needs have an id that is to be postfixed with a version number.
+When the need is updated, the version number is to be increased. 
+All link errors are converted into todo items in the documentation.
+Link errors can be solved by mentioning the right need id (with the new id) in the need.
+If the need itself needs adaptation due to the updated need it points to, 
+the version number of that need is to be increased as well.
+This way, the dirtiness propagates until everything is updated accordingly.
+The format of the version number can be enforced in conf.py.
+A working format is: R_version_controlled^42.
 
 Issue management on GitHub
 ----------------------------

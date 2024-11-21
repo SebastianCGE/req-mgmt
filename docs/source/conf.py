@@ -24,6 +24,7 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinx_needs',
     'sphinxcontrib.plantuml',
+    'sphinx_tabs.tabs',
 ]
 
 intersphinx_mapping = {
@@ -61,3 +62,29 @@ html_style = 'css/mytheme.css'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# -- Options for LaTeX/PDF output
+latex_elements = {
+    'passoptionstopackages': r'''
+\PassOptionsToPackage{svgnames}{xcolor}
+''',
+    'fontpkg': r'''
+\usepackage{mathptmx} % Times New Roman
+\usepackage[scaled=.90]{helvet} % Helvetica
+\usepackage{courier} % Courier
+''',
+    'preamble': r'''
+\usepackage[titles]{tocloft}
+\cftsetpnumwidth {1.25cm}\cftsetrmarg{1.5cm}
+\setlength{\cftchapnumwidth}{0.75cm}
+\setlength{\cftsecindent}{\cftchapnumwidth}
+\setlength{\cftsecnumwidth}{1.25cm}
+''',
+    'sphinxsetup': 'TitleColor=DarkGoldenrod',
+    'fncychap': r'\usepackage[Bjornstrup]{fncychap}',
+    'printindex': r'\footnotesize\raggedright\printindex',
+    'papersize': 'a4paper',
+    'figure_align': 'H',
+    'releasename': 'Version',
+}
+latex_show_urls = 'footnote'
