@@ -15,6 +15,11 @@ Overview Requirements
 Detailed Requirements
 -----------------------
 
+.. req:: The product shall compute the BMI
+  :id: R_compute_bmi
+
+  The product shall be capable of computing the BMI of a person
+
 .. req:: The product shall be version controlled
   :id: R_version_controlled
 
@@ -22,7 +27,7 @@ Detailed Requirements
 
 .. req:: The product shall be user friendly
   :id: R_user_friendly
-  :links: R_version_controlled, R_cheap
+  :links: R_version_controlled, R_cheap, R_compute_bmi
 
   The product shall be user friendly for adults
 

@@ -13,21 +13,33 @@ Overview Specifications
 Detailed Specifications
 -------------------------
 
-.. spec:: Make it version controlled
-  :id: S_version_controlled
+.. spec:: Use Git for version control
+  :id: S_git
   :status: closed
-  :links: R_version_controlled, S_user_friendly
+  :links: R_version_controlled
   :style: yellow, blue_border
 
-  Using a specific style
+  Use Git for version control of the BMI calculator
+  (Using a specific style for this need)
   
-.. spec:: Make it user friendly
-  :id: S_user_friendly
-  :status: open
+.. spec:: Create a command line tool for the BMI calculator
+  :id: S_command_line
+  :status: closed
   :links: R_user_friendly, R_cheap
 
+  Create a command line tool for the BMI calculator as it is cheap and user friendly
   
+.. spec:: Enter the weight and height in metric units
+  :id: S_metric_units
+  :status: closed
+  :links: R_compute_bmi
 
+  The BMI calculator shall only accept weight and height in metric units
 
+.. spec:: Algorithm for computing the BMI
+  :id: S_algorithm
+  :status: closed
+  :links: R_compute_bmi
 
+  The BMI shall be computed using a well known algorithm
 

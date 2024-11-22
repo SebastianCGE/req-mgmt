@@ -17,26 +17,96 @@ Detailed Test Cases
   :id: T_version_controlled
   :tags: system
   :status: open
-  :links: I_version_controlled, R_version_controlled
+  :links: S_git, I_github, R_version_controlled
 
 .. test:: Test if user friendly
   :id: T_user_friendly
   :tags: system
   :status: open
-  :links: I_user_friendly, R_user_friendly
+  :links: I_english, R_user_friendly, S_metric_units
+
+.. test:: Test if BMI is computed
+  :id: T_compute_bmi
+  :tags: system
+  :status: closed
+  :links: I_wikipedia_algorithm, I_meter_kilogram, I_wikipedia_algorithm
+
+.. test:: Test if overweight
+  :id: T_overweight
+  :tags: system
+  :status: closed
+  :links: I_wikipedia_algorithm
+
+  A test to check if the BMI is overweight.
+
+.. test:: Test if underweight
+  :id: T_underweight
+  :tags: system
+  :status: closed
+  :links: I_wikipedia_algorithm
+
+  A test to check if the BMI is underweight.
+
+.. test:: Test if valid height
+  :id: T_valid_height
+  :tags: system
+  :status: closed
+  :links: I_wikipedia_algorithm, I_meter_kilogram
+
+  A test to check if the height is valid.
 
 Test Cases with link to automated tests
 ----------------------------------------
 
 .. test-case:: Overweight BMI
-   :id: T_overweight
+   :id: A_overweight
    :file: ../../software/bmi/report.xml
    :suite: pytest
    :classname: test_bmi_calculator.TestBMICalculator
    :case: test_bmi_overweight
-   :links: I_user_friendly, R_user_friendly
-   
-   A pytest test case to test overweight.
+   :links: T_overweight
+
+   A pytest test case to test underweight.
+
+.. test-case:: Underweight BMI
+    :id: A_underweight
+    :file: ../../software/bmi/report.xml
+    :suite: pytest
+    :classname: test_bmi_calculator.TestBMICalculator
+    :case: test_bmi_underweight
+    :links: T_underweight
+  
+    A pytest test case to test underweight.
+
+.. test-case:: Normal BMI
+   :id: A_normal
+   :file: ../../software/bmi/report.xml
+   :suite: pytest
+   :classname: test_bmi_calculator.TestBMICalculator
+   :case: test_bmi_normal
+   :links: T_compute_bmi
+
+   A pytest test case to test normal BMI.
+
+.. test-case:: Non-zero height
+    :id: A_non_zero_height
+    :file: ../../software/bmi/report.xml
+    :suite: pytest
+    :classname: test_bmi_calculator.TestBMICalculator
+    :case: test_zero_height
+    :links: T_valid_height
+  
+    A pytest test case to test non-zero height.
+
+.. test-case:: Non-negative height
+    :id: A_non_negative_height
+    :file: ../../software/bmi/report.xml
+    :suite: pytest
+    :classname: test_bmi_calculator.TestBMICalculator
+    :case: test_negative_height
+    :links: T_valid_height
+
+    A pytest test case to test non-negative height.
 
 
 Test Results of automated tests
