@@ -28,6 +28,16 @@ Detailed Test Cases
   :status: closed
   :links: S_git, I_github
 
+  .. uml::
+
+    start
+    if (GitHub used?) then (yes)
+      :test passes;
+    else (no)
+      :test fails;
+    endif
+    stop
+
 .. test:: Test if user friendly
   :id: T_user_friendly
   :tags: system

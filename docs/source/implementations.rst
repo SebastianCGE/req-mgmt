@@ -35,6 +35,12 @@ Detailed Implementations
 
   Use Python 3 for the BMI calculator
 
+  .. uml::
+    
+     class BMI {
+         + float calculate(float weight, float height)
+     }
+
 .. impl:: Use a meters and kilograms for the BMI calculator
   :id: I_meter_kilogram
   :tags: system
@@ -49,7 +55,7 @@ Detailed Implementations
   :status: closed
   :links: S_algorithm, R_compute_bmi
 
-  Use the algorithm from Wikipedia for the BMI calculator
+  Use the algorithm from Wikipedia for the BMI calculator: :math:`bmi = weight/height^2`
 
 
 

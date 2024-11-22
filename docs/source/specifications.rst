@@ -30,7 +30,17 @@ Detailed Specifications
   :links: R_user_friendly, R_cheap
 
   Create a command line tool for the BMI calculator as it is cheap and user friendly
-  
+
+  .. uml::
+
+    User -> Tool: start tool
+    Tool -> User: ask for weight
+    User -> Tool: enter weight
+    Tool -> User: ask for height
+    User -> Tool: enter height
+    Tool -> User: display BMI
+
+
 .. spec:: Enter the weight and height in metric units
   :id: S_metric_units
   :status: closed

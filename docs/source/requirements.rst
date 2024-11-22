@@ -20,6 +20,13 @@ Detailed Requirements
 
   The product shall be capable of computing the BMI of a person
 
+  .. uml::
+
+    User --> (Use)
+    "Main Admin" as Admin
+    "Compute BMI" as (Use)
+    Admin --> (Install the application)
+
 .. req:: The product shall be version controlled
   :id: R_version_controlled
 
