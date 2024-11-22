@@ -28,7 +28,7 @@ jobs:
       run: |
         cd software/bmi
         pytest --junitxml=report.xml 
-        continue-on-error: true # Continue as we know at least one test is failing
+      continue-on-error: true # Continue as we know at least one test is failing
 
     - name: Install Graphviz and LaTeX packages
       run: |
