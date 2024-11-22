@@ -10,13 +10,22 @@ Overview Test Cases
   :columns: id;title;result;incoming;outpoing
   :style: table
    
+Test Cases not passed or not covered by automatic test
+--------------------------------------------------------
+
+.. needtable::
+  :types: test, Test-Case
+  :columns: id;title;result;status
+  :style: table
+  :filter: result != 'passed' and links_back == []
+   
 Detailed Test Cases 
 -------------------------
 
 .. test:: Test if version controlled
   :id: T_version_controlled
   :tags: system
-  :status: open
+  :status: closed
   :links: S_git, I_github, R_version_controlled
 
 .. test:: Test if user friendly
@@ -107,7 +116,6 @@ Test Cases with link to automated tests
     :links: T_valid_height
 
     A pytest test case to test non-negative height.
-
 
 Test Results of automated tests
 --------------------------------------

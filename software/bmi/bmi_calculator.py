@@ -2,7 +2,7 @@ def calculate_bmi(weight, height):
     """
     Calculate BMI given weight in kilograms and height in meters.
     """
-    if height <= 0:
+    if height < 0:
         raise ValueError("Height must be greater than zero")
     return weight / (height ** 2)
 
