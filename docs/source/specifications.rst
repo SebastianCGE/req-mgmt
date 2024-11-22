@@ -16,11 +16,13 @@ Detailed Specifications
 .. spec:: Use Git for version control
   :id: S_git
   :status: closed
-  :links: R_version_controlled
+  :links: R_version_controlled_non_existing
   :style: yellow, blue_border
 
   Use Git for version control of the BMI calculator
-  (Using a specific style for this need)
+  
+    * Using a specific style for this need and
+    * deliberately linking to a non-existing requirement
   
 .. spec:: Create a command line tool for the BMI calculator
   :id: S_command_line

@@ -26,7 +26,7 @@ Detailed Test Cases
   :id: T_version_controlled
   :tags: system
   :status: closed
-  :links: S_git, I_github, R_version_controlled
+  :links: S_git, I_github
 
 .. test:: Test if user friendly
   :id: T_user_friendly
