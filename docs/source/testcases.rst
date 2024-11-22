@@ -137,7 +137,7 @@ Test Results of automated tests
 
 .. These results are not used in the documentation
 
-.. .. test-results:: ../../software/bmicpp/report.xml
+.. .. test-results:: ../../software/bmi_cpp/report.xml
 
 .. Test Results of automated tests from Java version
 .. --------------------------------------------------
