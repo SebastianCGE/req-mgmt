@@ -155,3 +155,5 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks
 docs/source/_images/need_pie_11b3a.png
+software/bmi/report.xml
+software/bmicpp/report.xml
