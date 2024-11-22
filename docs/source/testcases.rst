@@ -6,8 +6,8 @@ Overview Test Cases
 ------------------------
    
 .. needtable::
-  :types: test
-  :columns: id;title;incoming;outpoing
+  :types: test, Test-Case
+  :columns: id;title;result;incoming;outpoing
   :style: table
    
 Detailed Test Cases 
@@ -25,7 +25,24 @@ Detailed Test Cases
   :status: open
   :links: I_user_friendly, R_user_friendly
 
-  
+Test Cases with link to automated tests
+----------------------------------------
+
+.. test-case:: Overweight BMI
+   :id: T_overweight
+   :file: ../../software/bmi/report.xml
+   :suite: pytest
+   :classname: test_bmi_calculator.TestBMICalculator
+   :case: test_bmi_overweight
+   :links: I_user_friendly, R_user_friendly
+   
+   A pytest test case to test overweight.
+
+
+Test Results of automated tests
+--------------------------------------
+
+.. test-results:: ../../software/bmi/report.xml
 
 
 

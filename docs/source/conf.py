@@ -23,6 +23,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.graphviz',
     'sphinx_needs',
+    'sphinxcontrib.test_reports',
     'sphinxcontrib.plantuml',
     'sphinx_tabs.tabs',
 ]
