@@ -60,41 +60,41 @@ Imported the following UML model from https://plantuml.com/sequence-diagram.
 Another UML model:
 
 .. uml::
-  package "Some Group" {
-    HTTP - [First Component]
-    [Another Component]
-  }
-
-  node "Other Groups" {
-    FTP - [Second Component]
-    [First Component] --> FTP
-  }
-
-  cloud {
-    [Example 1]
-  }
-
-
-  database "MySql" {
-    folder "This is my folder" {
-      [Folder 3]
+    package "Some Group" {
+      HTTP - [First Component]
+      [Another Component]
     }
-    frame "Foo" {
-      [Frame 4]
+
+    node "Other Groups" {
+      FTP - [Second Component]
+      [First Component] --> FTP
     }
-  }
+
+    cloud {
+      [Example 1]
+    }
 
 
-  [Another Component] --> [Example 1]
-  [Example 1] --> [Folder 3]
-  [Folder 3] --> [Frame 4]
+    database "MySql" {
+      folder "This is my folder" {
+        [Folder 3]
+      }
+      frame "Foo" {
+        [Frame 4]
+      }
+    }
+
+
+    [Another Component] --> [Example 1]
+    [Example 1] --> [Folder 3]
+    [Folder 3] --> [Frame 4]
 
 Yet another UML Model, same as the first one....:
 
 .. uml::
 
-      User --> (Use)
-      "Main Admin" as Admin
-      "Compute BMI" as (Use)
-      Admin --> (Install the application)
+    User --> (Use)
+    "Main Admin" as Admin
+    "Compute BMI" as (Use)
+    Admin --> (Install the application)
 
