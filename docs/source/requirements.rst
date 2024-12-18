@@ -89,3 +89,12 @@ Another UML model:
   [Example 1] --> [Folder 3]
   [Folder 3] --> [Frame 4]
 
+Yet another UML Model, same as the first one....:
+
+.. uml::
+
+      User --> (Use)
+      "Main Admin" as Admin
+      "Compute BMI" as (Use)
+      Admin --> (Install the application)
+
