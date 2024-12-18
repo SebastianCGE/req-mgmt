@@ -44,18 +44,18 @@ Requirements
 Imported the following model from https://plantuml.com/sequence-diagram.
 
 .. uml::
-  autonumber
-  Bob -> Alice : Authentication Request
-  Bob <- Alice : Authentication Response
+  Bob ->x Alice
+  Bob -> Alice
+  Bob ->> Alice
+  Bob -\ Alice
+  Bob \\- Alice
+  Bob //-- Alice
 
-  autonumber 15
-  Bob -> Alice : Another authentication Request
-  Bob <- Alice : Another authentication Response
+  Bob ->o Alice
+  Bob o\\-- Alice
 
-  autonumber 40 10
-  Bob -> Alice : Yet another authentication Request
-  Bob <- Alice : Yet another authentication Response
-
+  Bob <-> Alice
+  Bob <->o Alice
 
 testt
 
