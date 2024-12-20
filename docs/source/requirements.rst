@@ -40,7 +40,12 @@ Requirements
 
   .. needimport:: cheap.json
 
+  .. req:: The product shall be user friendly for children
+    :id: R_user_friendly_children
+    :links: R_user_friendly
 
+    The product shall be user friendly for children
+    
 Imported the following UML model from https://plantuml.com/sequence-diagram.
 
 .. uml::
